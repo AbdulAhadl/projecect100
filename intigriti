@@ -2,7 +2,7 @@ node{
     stage('git checkout'){
          git 'https://github.com/AbdulAhadl/projecect100.git'
     }
-   stage('mvn package'){
+    stage('mvn package'){
        def maven_home = tool name: 'maven-test', type: 'maven'
        sh "${maven_home}/bin/mvn package"
    
